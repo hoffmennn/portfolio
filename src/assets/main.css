@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", system-ui, sans-serif;
+
+  --color-ink: #14150f;
+  --color-muted: #5c5c54;
+  --color-faint: #8a8a80;
+  --color-line: #eceae4;
+  --color-sage: #5a6b4a;
+  --color-selection: #dbe3d2;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-white);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-sage);
+}
+
+::selection {
+  background: var(--color-selection);
+}
