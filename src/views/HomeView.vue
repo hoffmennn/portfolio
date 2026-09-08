@@ -221,25 +221,7 @@ const heroWidths = [1600, 2400, 3200]
       </article>
     </section>
 
-    <section id="services" class="px-6 pt-30 sm:px-10">
-      <div
-        class="mb-12 flex items-baseline justify-between gap-6 border-t border-line pt-5"
-      >
-        <h2 class="m-0 font-display text-[clamp(26px,3vw,44px)] font-normal tracking-[-0.03em]">
-          Weby na mieru
-        </h2>
-        <span class="text-xs tracking-[0.1em] text-faint uppercase">Services</span>
-      </div>
-      <div class="grid grid-cols-1 gap-px bg-line sm:grid-cols-3">
-        <div v-for="service in services" :key="service.index" class="bg-white px-7 pt-8 pb-10">
-          <span class="mb-4.5 block text-xs text-faint">{{ service.index }}</span>
-          <h3 class="m-0 mb-2.5 font-display text-lg font-medium tracking-[-0.015em]">
-            {{ service.title }}
-          </h3>
-          <p class="m-0 text-[14.5px] leading-relaxed text-muted">{{ service.description }}</p>
-        </div>
-      </div>
-    </section>
+
 
     <section id="about" class="px-6 pt-30 sm:px-10">
       <div
