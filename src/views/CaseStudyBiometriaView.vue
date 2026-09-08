@@ -76,7 +76,9 @@ const comparisonRows: ComparisonRow[] = [
         Adam Hoffmann
       </RouterLink>
       <nav class="flex gap-3 text-[11.5px] tracking-[0.01em] text-muted sm:gap-7 sm:text-[13.5px]">
-        <RouterLink to="/#work" class="shrink-0 text-muted">← Späť na práce</RouterLink>
+        <RouterLink to="/#work" class="shrink-0 text-muted">Práce</RouterLink>
+        <RouterLink to="/o-mne" class="shrink-0 text-muted">O mne</RouterLink>
+        <RouterLink to="/#contact" class="shrink-0 text-muted">Kontakt</RouterLink>
       </nav>
     </header>
 
@@ -119,8 +121,7 @@ const comparisonRows: ComparisonRow[] = [
           <div class="grid grid-cols-[90px_1fr] gap-4 border-t border-line py-3">
             <dt class="pt-0.5 text-[11.5px] tracking-[0.12em] text-[#a3a39a] uppercase">Odkazy</dt>
             <dd class="m-0 flex flex-wrap gap-4 text-[15px] leading-snug">
-              <a href="#" class="border-b border-[#dcdad4]">GitHub repozitár</a>
-              <a href="#" class="border-b border-[#dcdad4]">Text práce (PDF)</a>
+              <a href="https://github.com/hoffmennn/mouse-dynamics-authentication" class="border-b border-[#dcdad4]">GitHub repozitár</a>
             </dd>
           </div>
         </dl>

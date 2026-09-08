@@ -10,7 +10,8 @@
       </RouterLink>
       <nav class="flex gap-3 text-[11.5px] tracking-[0.01em] text-muted sm:gap-7 sm:text-[13.5px]">
         <RouterLink to="/#work" class="shrink-0 text-muted">Práce</RouterLink>
-        <RouterLink to="/o-mne" class="shrink-0 text-ink">O mne</RouterLink>
+        <RouterLink to="/o-mne" class="shrink-0 text-muted">O mne</RouterLink>
+        <RouterLink to="/#contact" class="shrink-0 text-muted">Kontakt</RouterLink>
       </nav>
     </header>
 

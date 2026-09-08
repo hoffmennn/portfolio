@@ -47,24 +47,6 @@ const projects: Project[] = [
   },
 ]
 
-const services = [
-  {
-    index: '01',
-    title: 'Návrh a dizajn',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    index: '02',
-    title: 'Vývoj na mieru',
-    description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna.',
-  },
-  {
-    index: '03',
-    title: 'Nasadenie a údržba',
-    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-  },
-]
-
 const heroWidths = [1600, 2400, 3200]
 </script>
 
@@ -73,16 +55,15 @@ const heroWidths = [1600, 2400, 3200]
     <header
       class="sticky top-0 z-20 flex flex-nowrap items-center justify-between gap-3 border-b border-line bg-white/86 px-6 py-4.5 backdrop-blur-[10px] sm:gap-6 sm:px-10"
     >
-      <a href="#top" class="shrink-0 font-display text-[17px] font-medium tracking-[-0.02em]">
+      <RouterLink to="/" class="shrink-0 font-display text-[17px] font-medium tracking-[-0.02em]">
         Adam Hoffmann
-      </a>
+      </RouterLink>
       <nav
         class="flex gap-3 text-[11.5px] tracking-[0.01em] text-muted sm:gap-7 sm:text-[13.5px]"
       >
-        <a href="#work" class="shrink-0 text-muted">Práce</a>
-        <a href="#services" class="shrink-0 text-muted">Služby</a>
+        <RouterLink to="/#work" class="shrink-0 text-muted">Práce</RouterLink>
         <RouterLink to="/o-mne" class="shrink-0 text-muted">O mne</RouterLink>
-        <a href="#contact" class="shrink-0 text-muted">Kontakt</a>
+        <RouterLink to="/#contact" class="shrink-0 text-muted">Kontakt</RouterLink>
       </nav>
     </header>
 
@@ -223,50 +204,28 @@ const heroWidths = [1600, 2400, 3200]
 
 
 
-    <section id="about" class="px-6 pt-30 sm:px-10">
-      <div
-        class="grid grid-cols-1 gap-14 border-t border-line pt-5 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]"
-      >
-        <div>
-          <span class="text-xs tracking-[0.1em] text-faint uppercase">About</span>
-        </div>
-        <div class="sm:col-span-2">
-          <p
-            class="m-0 mb-5 font-display text-[clamp(22px,2.6vw,36px)] leading-[1.3] font-light tracking-[-0.02em] text-pretty"
-          >
-            Študent informatiky na STU FEI, ktorý programuje webové aplikácie od strednej školy.
-          </p>
-          <p class="m-0 mb-6 max-w-[56ch] text-[15px] leading-loose text-muted">
-            Momentálne začínam inžinierske štúdium zamerané na umelú inteligenciu a verím, že
-            moje ďalšie profesné kroky budú taktiež v tejto oblasti.
-          </p>
-          <RouterLink to="/o-mne" class="text-sm text-muted underline underline-offset-4"
-            >Viac o mne →</RouterLink
-          >
-        </div>
-      </div>
-    </section>
-
     <section id="contact" class="px-6 pt-35 pb-10 sm:px-10">
-      <div
-        class="flex flex-wrap items-end justify-between gap-12 border-t border-line pt-12"
-      >
+      <div class="flex flex-wrap items-end justify-between gap-10 border-t border-line pt-12">
         <h2
           class="m-0 max-w-[20ch] font-display text-[clamp(32px,4.4vw,68px)] leading-[1.02] font-normal tracking-[-0.035em]"
         >
-          Máte projekt? Napíšte mi.
+          Kontakt
         </h2>
-        <div class="flex flex-col gap-2.5 text-sm text-muted">
-          <span>E-mail — doplniť</span>
-          <span>Telefón — doplniť</span>
-          <span>LinkedIn / GitHub — doplniť</span>
+        <div class="flex flex-col items-end gap-1.5 text-right text-m">
+          <a href="mailto:adam.hoffmann.151@gmail.com" class="text-muted">
+            adam.hoffmann.151@gmail.com
+          </a>
+          <a href="tel:+421940708368" class="text-muted">+421 940 708 368</a>
+          <a href="https://github.com/hoffmennn" class="text-muted">github.com/hoffmennn</a>
+          <a href="https://www.linkedin.com/in/a--hoffmann/" class="text-muted">
+            linkedin.com/in/a--hoffmann
+          </a>
         </div>
       </div>
       <div
         class="mt-24 flex flex-wrap justify-between gap-6 border-t border-line pt-4.5 text-xs text-faint"
       >
         <span>© 2026 Adam Hoffmann</span>
-        <span>Freelance web developer</span>
       </div>
     </section>
   </div>
